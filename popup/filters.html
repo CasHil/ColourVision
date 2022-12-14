@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/styles.css" />
+</head>
+<body>
+    <div id="colorblind-filter">
+        <div class="title-header">
+            <div>
+                <h3>ColourVision</h3>
+                By Casper Hildebrand
+            </div>
+            <div class="source-code-button">
+                <a target="_blank" href="https://github.com/CasHil/ColourVision">
+                    <img src="../images/github.png" style="height: 50px; width: 50px" alt="GitHub link to the source code of the extension"/>
+                </a>
+            </div>
+        </div>
+        
+        <div id="rainbow"></div>
+        <form>
+            <div id="option-normal">
+                <input id="radio-0" class="radio-custom" name="radio-group" type="radio" checked />
+                <label for="radio-0" class="radio-custom-label">Trichromacy (Normal colourvision)</label>
+            </div>
+            <div id="option-protanomaly">
+                <input id="radio-1" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-1" class="radio-custom-label">Protanomaly (Red weak) </label>
+            </div>
+            <div id="option-protanopia">
+                <input id="radio-2" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-2" class="radio-custom-label">Protanopia (Red blind)</label>
+            </div>
+            <div id="option-deuteranomaly">
+                <input id="radio-3" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-3" class="radio-custom-label">Deuteranomaly (Green weak)</label>
+            </div>
+            <div id="option-deuteranopia">
+                <input id="radio-4" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-4" class="radio-custom-label">Deuteranopia (Green blind)</label>
+            </div>
+            <div id="option-tritanomaly">
+                <input id="radio-5" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-5" class="radio-custom-label">Tritanomaly (Blue weak)</label>
+            </div>
+            <div id="option-tritanopia">
+                <input id="radio-6" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-6" class="radio-custom-label">Tritanopia (Blue blind)</label>
+            </div>
+            <div id="option-achromatomaly">
+                <input id="radio-7" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-7" class="radio-custom-label">Achromatomaly (Weak colourvision)</label>
+            </div>
+            <div id="option-achromatopsia">
+                <input id="radio-8" class="radio-custom" name="radio-group" type="radio" />
+                <label for="radio-8" class="radio-custom-label">Achromatopsia (No colourvision)</label>
+            </div>
+        </form>
+        <div class="text-block" style="display: flex; justify-content: space-between;">
+            <a href="popup.html">Back to start page</a>
+            <a href="remove_plugin.html">After a month of inactivity...</a>
+        </div>
+    </div>
+    <script src="../script/hover.js"></script>
+    <script src="../script/colourblindListener.js"></script>
+</body>
+
+</html>

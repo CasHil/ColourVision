@@ -1,0 +1,132 @@
+/* popup styles */
+body {
+  font-size: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  width: 400px;
+  height: 100%;
+  background-color: white;
+}
+
+.source-code-button {
+  text-align: right;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.title-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  align-items: center
+}
+
+#colorblind-filter form {
+  padding: 20px;
+}
+
+/* radio button styles */
+
+.checkbox-custom,
+.radio-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.text-block {
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+  margin-bottom: 1rem;
+}
+
+.checkbox-custom,
+.checkbox-custom-label,
+.radio-custom,
+.radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox-custom-label,
+.radio-custom-label {
+  position: relative;
+}
+
+.checkbox-custom+.checkbox-custom-label:before,
+.radio-custom+.radio-custom-label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid rgb(95, 88, 88);
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label:before {
+  background: black;
+}
+
+.radio-custom+.radio-custom-label:before {
+  border-radius: 50%;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+  background: black;
+}
+
+#rainbow {
+  height: 50px;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 154, 0, 1) 10%,
+      rgba(208, 222, 33, 1) 20%,
+      rgba(79, 220, 74, 1) 30%,
+      rgba(63, 218, 216, 1) 40%,
+      rgba(47, 201, 226, 1) 50%,
+      rgba(28, 127, 238, 1) 60%,
+      rgba(95, 21, 242, 1) 70%,
+      rgba(186, 12, 248, 1) 80%,
+      rgba(251, 7, 217, 1) 90%,
+      rgba(255, 0, 0, 1) 100%
+  );
+}
+
+h3 {
+  font-size: 2em;
+  color: black;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+form div:hover {
+  background-color: rgb(230, 230, 230)
+}
+
+form div {
+  border-radius: 10px;
+}
+
+.demo {
+  border:1px solid #C0C0C0;
+  border-collapse:collapse;
+  padding:5px;
+}
+.demo th {
+  border:1px solid #C0C0C0;
+  padding:5px;
+  background:#F0F0F0;
+}
+.demo td {
+  border:1px solid #C0C0C0;
+  padding:5px;
+}

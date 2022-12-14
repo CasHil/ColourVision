@@ -1,0 +1,20 @@
+{
+  "name": "ColourVision",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Colourblindness simulator",
+  "homepage_url": "https://github.com/CasHil/ColourVision",
+  "icons": {
+    "16": "images/colourvision.png",
+    "48": "images/colourvision.png",
+    "128": "images/colourvision.png"
+  },
+  "browser_action": {
+    "default_title": "ColourVision",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
